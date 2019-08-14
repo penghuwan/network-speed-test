@@ -1,6 +1,6 @@
 {
   "name": "network-speed-test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "测算网速的JS库，采用ES6语法和Promise风格编码，通过img加载/AJAX/downlink等方式测算网速",
   "main": "client.js",
   "dependencies": {

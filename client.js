@@ -1,3 +1,4 @@
+
 // 借助img.onload测算网速 
 // 好处：没有跨域问题 
 // 坏处：要自己测文件大小并提供参数fileSize,且文件必须为图片，文件大小不能灵活控制
@@ -44,7 +45,7 @@ function getSpeedWithDnlink() {
     // downlink测算网速
     const connection = window.navigator.connection;
     if (connection && connection.downlink) {
-        return connection.downlink;
+        return connection.downlink * 1024 / 8;
     }
 }
 
@@ -53,7 +54,7 @@ function getNetSpeed(url, times) {
     // downlink测算网速
     const connection = window.navigator.connection;
     if (connection && connection.downlink) {
-        return connection.downlink;
+        return connection.downlink * 1024 / 8;
     }
     // 多次测速求平均值
     const arr = [];
@@ -69,6 +70,7 @@ function getNetSpeed(url, times) {
         return sum / times;
     })
 }
+
 
 getSpeedWithImg("https://s2.ax1x.com/2019/08/13/mPJ2iq.jpg", 8.97).then(
     speed => {
