@@ -70,20 +70,18 @@ function getNetSpeed(url, times) {
     })
 }
 
-// Example
+getSpeedWithImg("https://s2.ax1x.com/2019/08/13/mPJ2iq.jpg", 8.97).then(
+    speed => {
+        console.log(speed);
+    }
+)
 
-// getSpeedWithImg("https://s2.ax1x.com/2019/08/13/mPJ2iq.jpg", 8.97).then(
-//     speed => {
-//         console.log(speed);
-//     }
-// )
+getSpeedWithAjax('./speed.jpg').then(speed => {
+    console.log(speed);
+});
 
-// getSpeedWithAjax('./speed.jpg').then(speed => {
-//     console.log(speed);
-// });
+getNetSpeed('./speed.jpg', 3).then(speed => {
+    console.log(speed);
+});
 
-// getNetSpeed('./speed.jpg', 3).then(speed => {
-//     console.log(speed);
-// });
-
-// getSpeedWithDnlink();
+getSpeedWithDnlink();
