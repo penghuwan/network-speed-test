@@ -17,11 +17,11 @@
 
 如果你使用NPM：
 先 
-```
+```js
 npm i network-speed-test
 ```
 然后
-```
+```js
 import * from 'network-speed-test';
 getSpeedWithImg("https://s2.ax1x.com/2019/08/13/mPJ2iq.jpg", 8.97).then(
     speed => {
