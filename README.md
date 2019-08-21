@@ -1,3 +1,4 @@
+![](https://img.shields.io/badge/release-1.0.0-brightgreen)
 ![](https://img.shields.io/badge/syntax-ES6-blue)
 ![](https://img.shields.io/badge/style-Promise-orange)
 # Network-Speed-Test
