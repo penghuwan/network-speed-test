@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/syntax-ES6-blue)
+![](https://img.shields.io/badge/style-Promise-orange)
 # Network-Speed-Test
 测算网速的JS库，采用ES6语法和Promise风格编码，通过img加载/AJAX/downlink等方式测算网速
 
