@@ -4,6 +4,9 @@
 # Network-Speed-Test
 测算网速的JS库，采用ES6语法和Promise风格编码，通过img加载/AJAX/downlink等方式测算网速
 
+## 个人知乎专栏文章
+[当我们尝试用JavaScipt测网速](https://zhuanlan.zhihu.com/p/78166922)
+
 # Description
 提供了四个API
 + **getSpeedWithImg**：借助img.onload测算网速。优点：没有跨域问题。缺点：要自己测文件大小并提供参数fileSize,且文件必须为图片，文件大小不能灵活控制
